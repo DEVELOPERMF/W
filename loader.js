@@ -1,8 +1,8 @@
 // For any informations, go to: https://github.com/WiBla/Script
 
-if(!$("#WiBla-CSS")[0]) {
+if(!$("#mWoot")[0]) {
 	var defaultSettings = {
-		"V": "1.2.0",
+		"V": "1.2.5",
 		"showMenu": false,
 		"autoW": true,
 		"autoDJ": false,
@@ -59,16 +59,16 @@ function init() {
 	var menu = "", moderateGUI = "", icon = "";
 		menu += '<div id="Settings">';
 		menu += '	<ul>';
-		menu += '		<li id="ws-woot"     onclick="menu(1);">Auto-woot</li>';
-		menu += '		<li id="ws-join"     onclick="menu(2);">Auto-join</li>';
-		menu += '		<li id="ws-video"    onclick="menu(3);">Hide video</li>';
+		menu += '		<li id="ws-woot"     onclick="menu(1);">AutoWoot</li>';
+		menu += '		<li id="ws-join"     onclick="menu(2);">AutoJoin</li>';
+		menu += '		<li id="ws-video"    onclick="menu(3);">Hide Video</li>';
 		menu += '		<li id="ws-css"      onclick="menu(4);">Custom Style</li>';
-		menu += '		<li id="ws-bg"       onclick="menu(5);">Custom Bg</li>';
-		menu += '		<li id="ws-old-chat" onclick="menu(6);">Old chat</li>';
-		menu += '		<li id="ws-lengthA"  onclick="menu(7);">Song limit</li>';
-		menu += '		<li id="ws-mehA"     onclick="menu(8);">Show mehs</li>';
-		menu += '		<li id="ws-mutemeh"  onclick="menu(9);">Mute on meh</li>';
-		menu += '		<li id="ws-off"      onclick="menu(10);">Shutdown</li>';
+		menu += '		<li id="ws-bg"       onclick="menu(5);">Custom Background</li>';
+		menu += '		<li id="ws-old-chat" onclick="menu(6);">Old Chat</li>';
+		menu += '		<li id="ws-lengthA"  onclick="menu(7);">Song Limit</li>';
+		menu += '		<li id="ws-mehA"     onclick="menu(8);">Show Mehs</li>';
+		menu += '		<li id="ws-mutemeh"  onclick="menu(9);">Mute nn Meh</li>';
+		menu += '		<li id="ws-off"      onclick="menu(10);">Off</li>';
 		menu += '		<li id="ws-twitter"><a href="https://twitter.com/WiBla7" target="blank">@WiBla7</a></li>';
 		menu += '		<li id="ws-V">'+ json.V +'</li>';
 		menu += '	</ul>';
