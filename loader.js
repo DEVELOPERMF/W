@@ -2,7 +2,7 @@
 
 if(!$("#WiBla-CSS")[0]) {
 	var defaultSettings = {
-		"V": "Beta 1.2.0",
+		"V": "1.2.0",
 		"showMenu": false,
 		"autoW": false,
 		"autoDJ": false,
