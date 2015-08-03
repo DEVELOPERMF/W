@@ -4,7 +4,7 @@ if(!$("#WiBla-CSS")[0]) {
 	var defaultSettings = {
 		"V": "1.2.0",
 		"showMenu": false,
-		"autoW": false,
+		"autoW": true,
 		"autoDJ": false,
 		"showVideo": true,
 		"CSS": 0,
