@@ -1,6 +1,6 @@
 // For any informations, go to: https://github.com/WiBla/Script
 
-if(!$("#mWoot")[0]) {
+if(!$("#MFEw")[0]) {
 	var defaultSettings = {
 		"V": "1.2.5",
 		"showMenu": false,
@@ -32,10 +32,8 @@ if(!$("#mWoot")[0]) {
  	}
 	// ####### [Global variables] #######
 	var old_chat, menu_css, purple_css, blue_css, notif, style,
-	wibla = API.getUser().id == 4613422,
-	zurbo = API.getUser().id == 4506088,
-	dano = API.getUser().id == 209178,
-	isDev = wibla || zurbo || dano,
+	mrfalse = API.getUser().id == 4613422,
+	isDev = mrfalse,
 	hasPermBouncer = API.hasPermission(null, API.ROLE.BOUNCER) || isDev,
 	vol=API.getVolume();
 	/* Alpha & Beta tester privilege (not ready yet)
