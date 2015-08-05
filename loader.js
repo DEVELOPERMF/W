@@ -21,7 +21,7 @@ if(!$("#MFEw")[0]) {
 		"bot": "3455411"
 	};
 	// getting old Settings if available
-	json = JSON.parse(localStorage.getItem("ws-settings"));
+	json = JSON.parse(localStorage.getItem("MFEw-settings"));
 	// if not
 	if (json === null || json === undefined) {
   	json = defaultSettings;
@@ -270,7 +270,7 @@ function menu(choice) {
 			console.log("Use: menu(1-10)");
 	}
 
-	localStorage.setItem("ws-settings",JSON.stringify(json));
+	localStorage.setItem("MFEw-settings",JSON.stringify(json));
 }
 function autowoot() {
 	if (json.autoW === true) {
@@ -325,7 +325,7 @@ function hideStream() {
 		$("#no-dj")[0].style.visibility = "hidden";
 		item.video.className = "ws-on";
 	}
-	localStorage.setItem("ws-settings",JSON.stringify(json));
+	localStorage.setItem("MFEw-settings",JSON.stringify(json));
 }
 function design() {
 	if (json.bg == "reset") askBG();
@@ -344,7 +344,7 @@ function design() {
 			item.style.setAttribute("href", purple_css);
 			json.bg = "https://rawgit.com/WiBla/Script/master/images/background/1.png"; changeBG();
 	}
-	localStorage.setItem("ws-settings",JSON.stringify(json));
+	localStorage.setItem("MFEw-settings",JSON.stringify(json));
 }
 function oldChat() {
 	if (json.oldChat) {
@@ -396,7 +396,7 @@ function changeBG(isDefault) {
 			$("i.torch")[0].style.display = "none";
 			$("i.torch.right")[0].style.display = "none";
 		}
-		localStorage.setItem("ws-settings",JSON.stringify(json));
+		localStorage.setItem("MFEw-settings",JSON.stringify(json));
 	}
 }
 function alertDuration() {
@@ -565,7 +565,7 @@ function chatCommand(commande) {
 			} else {
 				args[1] = args[1].substr(1);
 				json.bot = API.getUser(args[1]);
-				localStorage.setItem("ws-settings",JSON.stringify(json));
+				localStorage.setItem("MFEw-settings",JSON.stringify(json));
 			}
 		break;*/
 		
